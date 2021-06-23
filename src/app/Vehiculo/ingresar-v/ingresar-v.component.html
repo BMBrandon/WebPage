@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Ingresar Vehiculo</h1>
+        </div>
+        <div>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Placa</label>
+                    <input type="text" class="form-control" [(ngModel)]="vehiculo.placa" name="placa">
+                </div>
+                <div class="form-group">
+                    <label for="">Color</label>
+                    <input type="text" class="form-control" [(ngModel)]="vehiculo.color" name="color">
+                </div>
+                <div class="form-group">
+                    <label for="">Modelo</label>
+                    <input type="text" class="form-control" [(ngModel)]="vehiculo.modelo" name="modelo">
+                </div>
+                <div class="form-group">
+                    <label for="">Anio</label>
+                    <input type="text" class="form-control" [(ngModel)]="vehiculo.anio" name="anio">
+                </div>
+                <div>
+                    <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+                </div>
+            </form>
+        </div>
+
+</div>
+</div>

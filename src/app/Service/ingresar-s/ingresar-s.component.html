@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Ingresar Servicio</h1>
+        </div>
+        <div>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Descripcion</label>
+                    <input type="text" class="form-control" [(ngModel)]="servicio.descripcion" name="descripcion">
+                </div>
+                <div class="form-group">
+                    <label for="">Precio</label>
+                    <input type="text" class="form-control" [(ngModel)]="servicio.precio" name="precio">
+                </div>
+                <div>
+                    <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+                </div>
+            </form>
+        </div>
+
+</div>
+</div>

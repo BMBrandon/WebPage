@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Listar Vehiculo</h1>
+        </div>
+        <div>
+            <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Placa</th>
+                <th scope="col">Color</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Anio</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let persona of lvehiculo">
+              <tr>
+                <td>{{vehiculo.id}}</td>
+                <td>{{vehiculo.placa}}</td>
+                <td>{{vehiculo.color}}</td>
+                <td>{{vehiculo.modelo}}</td>
+                <td>{{vehiculo.anio}}</td>
+                <td><button type="button" class="btn btn-outline-info"(click) = "Modificar(vehiculo)">Modificar</button></td>
+                <td><button type="button" class="btn btn-outline-info"(click) = "Eliminar(vehiculo)">Eliminar</button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+
+</div>
+</div>

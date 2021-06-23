@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Listar Servicio</h1>
+        </div>
+        <div>
+            <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">DESCRIPCION</th>
+                <th scope="col">PRECIO</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let servicio of lservicios">
+              <tr>
+                <td>{{servicio.id}}</td>
+                <td>{{servicio.descripcion}}</td>
+                <td>{{servicio.precio}}</td>
+                <td><button type="button" class="btn btn-outline-info"(click) = "Modificar(servicio)">Modificar</button></td>
+                <td><button type="button" class="btn btn-outline-info"(click) = "Eliminar(servicio)">Eliminar</button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+
+</div>
